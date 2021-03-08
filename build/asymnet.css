@@ -1,3 +1,44 @@
-.asymnc-container-middle{
-    flex: content;
+.asymnc-container-middle-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: aqua;
+    opacity: 50%;
+    align-self: center;
+}
+
+.asymnc-container-middle-column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: aqua;
+    opacity: 50%;
+    align-self: center;
+}
+
+.asymnc-container-top-column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: aqua;
+    opacity: 50%;
+    vertical-align: top;
+}
+
+.asymc-click-box{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.asymc-dl-drawbox{
+    
+}
+
+.asymc-header{
+    font-size: 24px;
+    align-self: center;
 }

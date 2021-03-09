@@ -12,21 +12,32 @@
     <div class="asymnc-container-top-column">
         <p class="asymc-header">Welcome to dlWriter</p>
 
-        <form action="" class="asymnc-form">
-            <label for="dlrows"> &nbsp Number of cubes in row &nbsp
-                <input type="text" id="fname" name="fname">
-                <br>
-            </label>
-            <label for="dlrows"> &nbsp Number of cubes in column &nbsp
-                <input type="text" id="fname" name="fname">
-                <br>
-            </label>
-        </form>
+        <div class="asymnc-container-middle-row">
+            <form action="" class="asymnc-form">
+                <label for="dlrows"> &nbsp Number of cubes in row &nbsp
+                    <input type="text" placeholder="7" id="rows" name="fname">
+                    <br>
+                </label>
+                <label for="dlrows"> &nbsp Number of cubes in column &nbsp
+                    <input type="text" placeholder="4" id="cols" name="fname">
+                    <br>
+                </label>
+            </form>
+            <button class="asymnc-btn-gray" onclick="asymncShowInput()">draw</button>
+        </div>
 
         <div class="asymc-dl-drawbox">
         </div>
-        <script type="text/javascript" src="../config.js"></script>
-        <script  src="./asymnet.js"></script>
+
+        <div class="asymnc-stat-box">
+            <div class="asmync-stat-box-item-row">
+                <p>rows: &nbsp; &nbsp;</p>
+                <p id="rows"> xd</p>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="./asymnet.js"></script>
     </div>
 </body>
 

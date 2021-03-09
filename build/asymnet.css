@@ -1,35 +1,38 @@
-body{
+body {
     margin: 0px;
 }
 
-.asymnc-container-middle-row{
+.asymnc-container-middle-row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: aqua;
     /* opacity: 50%; */
     align-self: center;
+    justify-content: space-between;
 }
 
-.asymnc-container-middle-column{
+.asymnc-container-middle-column {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     background-color: aqua;
     /* opacity: 50%; */
     align-self: center;
+    justify-content: space-between;
 }
 
-.asymnc-container-top-column{
+.asymnc-container-top-column {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     background-color: aqua;
     /* opacity: 50%; */
     vertical-align: top;
+    justify-content: space-between;
 }
 
-.asymc-click-box{
+.asymc-click-box {
     width: 50px;
     height: 50px;
     background-color: white;
@@ -38,17 +41,46 @@ body{
     border-width: 1px;
 }
 
-.asymc-dl-drawbox{
+.asymc-dl-drawbox {
     display: flex;
     flex-direction: row;
     width: 100vw;
 }
 
-.asymnc-form{
+.asymnc-form {
     display: flex;
 }
 
-.asymc-header{
+.asymc-header {
     font-size: 24px;
     align-self: center;
+}
+
+.asymnc-stat-box {
+    position: absolute;
+    display: flex;
+    width: 150px;
+    height: 300px;
+    background-color: rgba(165, 165, 182, 0.7);
+    border-radius: 10px;
+    margin-left: auto;
+    top: -10px;
+    right: -10px;
+}
+
+.asmync-stat-box-item-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* buttons */
+
+.asymnc-btn-gray {
+    background-color: gray;
+    margin-left: 20px;
+    height: 25px;
+    border: black;
+    border-radius: 5px;
 }

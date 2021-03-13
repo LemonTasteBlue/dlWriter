@@ -13,17 +13,17 @@
         <p class="asymc-header">Welcome to dlWriter</p>
 
         <div class="asymnc-container-middle-row">
-            <form action="" class="asymnc-form">
+            <form action="" class="asymnc-form" id="config-form">
                 <label for="dlrows"> &nbsp Number of cubes in row &nbsp
-                    <input type="text" placeholder="7" id="rows" name="fname">
+                    <input type="text" placeholder="7" id="rows_form" name="rows_form">
                     <br>
                 </label>
                 <label for="dlrows"> &nbsp Number of cubes in column &nbsp
-                    <input type="text" placeholder="4" id="cols" name="fname">
+                    <input type="text" placeholder="4" id="cols_form" name="cols_form">
                     <br>
                 </label>
             </form>
-            <button class="asymnc-btn-gray" onclick="asymncShowInput()">draw</button>
+            <button class="asymnc-btn-gray" onclick="UpdateStatBox()">draw</button>
         </div>
 
         <div class="asymc-dl-drawbox">
@@ -31,8 +31,12 @@
 
         <div class="asymnc-stat-box">
             <div class="asmync-stat-box-item-row">
-                <p>rows: &nbsp; &nbsp;</p>
-                <p id="rows"> xd</p>
+                <p class="asymnc-stat-box-label">rows: </p>
+                <p id="rows-stat-box">_&nbsp;</p>
+            </div>
+            <div class="asmync-stat-box-item-row">
+                <p class="asymnc-stat-box-label">cols: </p>
+                <p id="cols-stat-box">_&nbsp;</p>
             </div>
         </div>
 
